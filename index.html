@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+       <title> Colloquium X </title> 
+       <!--NAVBAR-->
+            <link rel="stylesheet" href="./css/Navbar.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <!--Events-->
+            <!-- font awesome cdn link  -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <!-- custom css file link  -->
+            <link rel="stylesheet" href="./css/Event.css">
+            <!-- custom js file link  -->
+            <script src="./js/eventDetails.js" defer></script>
+   </head>
+   
+   <body>
+    <!--navbar starts-->
+    <div class="nav">
+      <nav>
+         <ul>
+            <div class="logo">
+               <li>
+                  <img src="./public/logo.png" alt="logo" class="LOGO">
+               </li>
+            </div>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+            <div class="items">                                                         <!--NEED TO ADD LINKS IN THE END-->
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Event Details</a></li>
+               <li><a href="#">Sponsors</a></li>
+               <li><a href="#">OC of the Event</a></li>
+               <li><a href="#">Contact Us</a></li>
+            
+            </div>
+            
+         </ul>
+      </nav>
+   </div> 
+      <script>
+         $('nav ul li.btn span').click(function(){
+           $('nav ul div.items').toggleClass("show");
+           $('nav ul li.btn span').toggleClass("show");
+         });
+      </script>
+    <!--navbar finishes--> 
+    <!--hero section starts-->
+    <div>
+      <img src="./public/logo.png" alt="EventLogo" id="hero">
+    </div>
+    <!--hero section finishes-->
+    <!--event details starts-->
+   <div class="eventNames"> 
+    <div class="container">
+
+         <h3 class="heading"> Events </h3>
+   
+         <div class="products-container">
+            <div class="layer1">
+               <div class="product" data-name="p-1">
+                  <img src="./public/eventDetails/eventLogo.png" alt="RECKON">
+                  <h3>RECKON</h3>
+                  <div class="price">11 February 24</div>
+               </div>
+      
+               <div class="product" data-name="p-2">
+                  <img src="./public/eventDetails/eventLogo.png" alt="FALLACY">
+                  <h3>FALLACY</h3>
+                  <div class="price">12 February 24</div>
+               </div>
+      
+               <div class="product" data-name="p-3">
+                  <img src="./public/eventDetails/eventLogo.png" alt="CIRCUITRIX">
+                  <h3>CIRCUITRIX</h3>
+                  <div class="price">13 February 24</div>
+               </div>
+            </div>
+            <div class="layer2">
+               <div class="product" data-name="p-4">
+                  <img src="./public/eventDetails/eventLogo.png" alt="ARCANE">
+                  <h3>ARCANE</h3>
+                  <div class="price">14 February 24</div>
+               </div>
+      
+               <div class="product" data-name="p-5">
+                  <img src="./public/eventDetails/eventLogo.png" alt="BUZZINGA">
+                  <h3>BUZZINGA</h3>
+                  <div class="price">15 February 24</div>
+               </div> 
+            </div>
+         </div>
+   
+      </div>
+   </div>   
+     <div class="products-preview">
+        
+        <div class="preview" data-target="p-1">
+           <div class="container">
+           <div class="popup-left">
+              <i class="fas fa-times"></i>
+              <img src="./public/eventDetails/11852467_4799098.jpg" alt="Event 1">
+              <h3>RECKON</h3>
+              <div class="price">11 February 24</div>
+              <div class="price">Location</div>
+              <p>During this event, participants will be challenged
+               to solve cybersecurity exercises on an ISTE
+               platform, discovering hidden flags in vulnerable
+               programs and websites with clues and hints
+               provided for each question. Team needs a minimum of 3 players to register for the event.Teams solve
+               questions using different deciphering techniques,
+               earning points for each correct answer. Points
+               decrease as more teams solve questions, adding
+               a dynamic challenge. The event emphasizes
+               speed and accuracy. The first team to clear the
+               final level is declared the winner.
+              </p>              
+           </div>
+  
+           <div class="popup-right">
+             
+           </div>
+              <form>
+                 <input type="text" name="Name" placeholder="Member-1 Name" required>
+                 <input type="Email" name="Email" placeholder="Member-1 Email" required>
+                 <input type="number" name="Contact No." placeholder="Member-1 Contact No." required>
+                 <input type="text" name="Name" placeholder="Member-2 name" required>
+                 <input type="Email" name="Email" placeholder="Member-2 Email" required>
+                 <input type="number" name="Contact No." placeholder="Member-2 Contact No." required>
+                 <input type="text" name="Name" placeholder="Member-3 name" required>
+                 <input type="Email" name="Email" placeholder="Member-3 Email" required>
+                 <input type="number" name="Contact No." placeholder="Member-3 Contact No." required>
+                 <input type="text" name="Name" placeholder="Member-4 name">
+                 <input type="Email" name="Email" placeholder="Member-4 Email">
+                 <input type="number" name="Contact No." placeholder="Member-4 Contact No.">
+                 <button type="submit" class="btn btn2">Submit</button>
+                 <div class="button">
+              </form>
+           </div>
+  
+        </div>
+        </div>
+  
+  
+  
+  
+  
+  
+        <div class="preview" data-target="p-2">
+           <div class="container">
+              <div class="popup-left">
+                 <i class="fas fa-times"></i>
+                 <img src="./public/eventDetails/11852467_4799098.jpg" alt="Event 1">
+                 <h3>FALLACY</h3>
+                 <div class="price">12 February 24</div>
+                 <div class="price">LOCATION</div>
+                 <p>Fallacy is an engaging event centered around
+                  coding, debugging, and collaborative problem solving. The event features two rounds: "Blind
+                  Coding,
+                  " where participants tackle problems with
+                  monitors off, relying on coding skills and mental
+                  visualization, and "Debug the Code,
+                  " where teams
+                  rapidly correct errors in a relay format. The team
+                  with the most points at the end of both rounds will
+                  be declared the winner.
+                 </p>                
+              </div>
+     
+               <div class="popup-right">
+               
+               <form>
+                  <input type="text" name="Name" placeholder="Member-1 Name" required>
+                  <input type="Email" name="Email" placeholder="Member-1 Email" required>
+                  <input type="number" name="Contact No." placeholder="Member-1 Contact No." required>
+                  <input type="text" name="Name" placeholder="Member-2 name" >
+                  <input type="Email" name="Email" placeholder="Member-2 Email" >
+                  <input type="number" name="Contact No." placeholder="Member-2 Contact No.">
+                  <button type="submit" class="btn btn2">Submit</button>
+                  <div class="button">
+               </form>
+               </div> 
+            </div>
+     
+           </div>
+        </div>
+  
+        <div class="preview" data-target="p-3">
+           <div class="container">
+              <div class="popup-left">
+                 <i class="fas fa-times"></i>
+                 <img src="./public/eventDetails/11852467_4799098.jpg" alt="Event 1">
+                 <h3>CIRCUITRIX</h3>
+                 <div class="price">13 February 24</div>
+                 <div class="price">Location</div>
+                 <p>"Circuitrix" is an exciting electronic circuit-building
+                  competition highlighting knowledge, teamwork,
+                  and hands-on skills across two rounds. In Round 1,
+                  "Knowledge Blitz,
+                  " teams engage in a buzzer
+                  showdown, strategically using virtual currency to
+                  answer electronic riddles. In the "Circuit Forging"
+                  round, teams construct functional circuits for given
+                  problem statements, incorporating essential
+                  components and purchasable upgrades. The
+                  winning team, evaluated on complexity, innovation,
+                  and accuracy, presents the best fully functional
+                  circuit
+                 </p>
+                
+                 
+              </div>
+     
+              <div class="popup-right">
+              </div>
+              <form>
+               <input type="text" name="Name" placeholder="Member-1 Name" required>
+               <input type="Email" name="Email" placeholder="Member-1 Email" required>
+               <input type="number" name="Contact No." placeholder="Member-1 Contact No." required>
+               <input type="text" name="Name" placeholder="Member-2 name" >
+               <input type="Email" name="Email" placeholder="Member-2 Email" >
+               <input type="number" name="Contact No." placeholder="Member-2 Contact No." >
+               <input type="text" name="Name" placeholder="Member-3 name" >
+               <input type="Email" name="Email" placeholder="Member-3 Email" >
+               <input type="number" name="Contact No." placeholder="Member-4 Contact No." >
+               <input type="text" name="Name" placeholder="Member-4 name">
+               <input type="Email" name="Email" placeholder="Member-4 Email">
+               <input type="number" name="Contact No." placeholder="Member-4 Contact No.">
+               <button type="submit" class="btn btn2">Submit</button>
+               <div class="button">
+            </form>
+              </div>
+     
+           </div>
+        </div>
+  
+        <div class="preview" data-target="p-4">
+           <div class="container">
+              <div class="popup-left">
+                 <i class="fas fa-times"></i>
+                 <img src="./public/eventDetails/11852467_4799098.jpg" alt="Event 1">
+                 <h3>ARCANE</h3>
+                 <div class="price">14 February 24</div>
+                 <p>Arcane is an intense gaming event with
+                  separate mobile and PC stages.Featuring Valorant and BGMI
+                  squad TDM tournaments.
+                  
+                 </p>
+              </div>
+     
+              <div class="popup-right">
+               
+                 <form>
+                  <input type="text" name="Name" placeholder="Player Name" required>
+                  <input type="Email" name="Email" placeholder="Player Email" required>
+                  <input type="number" name="Contact No." placeholder="Player Number" required>
+                  <button type="submit" class="btn btn2">Submit</button>
+                  <div class="button">
+                 </form>
+               </div>
+            </div>
+     
+           </div>
+        </div>
+  
+        <div class="preview" data-target="p-5">
+           <div class="container">
+              <div class="popup-left">
+                 <i class="fas fa-times"></i>
+                 <img src="./public/eventDetails/11852467_4799098.jpg" alt="Event 1">
+                 <h3>BUZZINGA</h3>
+                 <div class="price">15 February 24</div>
+                 <div class="price">Location</div>
+                 <p>Buzzinga, inspired by the popular shows "Jeopardy"
+                  and "Catch 21,
+                  " tests participants' skills in three
+                  exciting rounds. In the first round, participants
+                  choose a Trivia genre, bet, and earn currency for
+                  correct answers. The second round is a buzzer
+                  round with questions of assigned values. The event
+                  concludes with the "Catch 21" finale, challenging
+                  finalists to swiftly answer trivia questions to
+                  accumulate cards and reach a total of 21 for
+                  victory.
+                 </p>
+               
+                 
+              </div>
+     
+              <div class="popup-right">
+            </div>
+              <form>
+                  <input type="text" name="Name" placeholder="Member-1 Name" required>
+                  <input type="Email" name="Email" placeholder="Member-1 Email" required>
+                  <input type="number" name="Contact No." placeholder="Member-1 Contact No" required>
+                  <input type="text" name="Name" placeholder="Member-2 name" >
+                  <input type="Email" name="Email" placeholder="Member-2 Email" >
+                  <input type="number" name="Contact No." placeholder="Member-2 Contact No" >
+                  <input type="text" name="Name" placeholder="Member-3 name" >
+                  <input type="Email" name="Email" placeholder="Member-3 Email" >
+                  <input type="number" name="Contact No." placeholder="Member-4 Contact No" >
+                  <input type="text" name="Name" placeholder="Member-4 name">
+                  <input type="Email" name="Email" placeholder="Member-4 Email">
+                  <input type="number" name="Contact No." placeholder="Member-4 Contact No">
+                  <button type="submit" class="btn btn2">Submit</button>
+                  <div class="button">
+               </form>
+
+              </div>
+     
+           </div>
+        </div>
+      </div>
+  
+   </div>
+    <!--event details finishes-->
+    <!--sponser starts-->
+    <!--sponser finishes-->
+    <!--OC starts-->
+    <!--OC finishes-->
+    <!--contact us starts-->
+    <!--contact us finishes-->
+
+    <!--footer starts-->
+    <footer>
+        <div class="end">
+            &#169; 2024 COLLOQUIUM. All Rights Reserved.<br>
+            Made with &#9829; by ISTE Team.
+        </div>
+    </footer>
+    <!--footer ends-->
+   </body>
+</html>
