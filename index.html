@@ -24,20 +24,15 @@
    
    <body>
     <!--navbar starts-->
-    <div class="nav">
+    <div class="nav" id="navbar">
       <nav>
          <ul>
-            <div class="logo">
-               <li>
+         
+               <li class="logo">
                   <img src="./public/ISTE.png" alt="logo" class="LOGO">
                </li>
-            </div>
+   
             <li class="btn"><span class="fas fa-bars"></span></li>
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-          </div>
             <div class="items">                                                         <!--NEED TO ADD LINKS IN THE END-->
                <li><a href="#">Home</a></li>
                <li><a href="#">Event Details</a></li>
@@ -48,6 +43,7 @@
             </div>
             
          </ul>
+
       </nav>
    </div> 
       <script>
@@ -55,6 +51,25 @@
            $('nav ul div.items').toggleClass("show");
            $('nav ul li.btn span').toggleClass("show");
          });
+
+         window.onscroll = function() {myFunction()};
+
+         var navbar = document.getElementById("navbar");
+         var sticky = navbar.offsetTop;
+
+         function myFunction() {
+         if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+         } else {
+            navbar.classList.remove("sticky");
+         }
+         }
+         window.onscroll = function() {
+        scrollFunction()
+    };
+
+    
+
       </script>
     <!--navbar finishes--> 
     <!--hero section starts-->
