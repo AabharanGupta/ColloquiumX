@@ -17,9 +17,9 @@ html{
 nav{
   position: fixed;
   top: 0;
-  background: #902724;
+  background: #ee0401;
   padding: 10px 20px 10px 70px;
-  border: 2px solid #902724;
+  border: 2px solid #ee0401;
   border-left: none;
   border-right: none;
   height: 90px;
