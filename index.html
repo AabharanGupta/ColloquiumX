@@ -238,12 +238,20 @@
        .then(response => response.json())
        .then(data => {
         // Handle the response from the API
+        if(data.status == true)
+         {
+               alert('Registration successful');
+         }
+         else
+         {
+               alert('Registration unsuccessful');
+         }
         console.log('Success:', data);
-      }).then(()=>alert('Registration successful'))
+      })
       .catch(error => {
         // Handle errors
         console.error('Error:', error);
-        alert('Registration unsuccessful');
+        alert('Registration unsuccessfully');
       });
 }
          
