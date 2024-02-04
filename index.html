@@ -20,6 +20,7 @@
       <!--OC-->
             <link rel="stylesheet" href="./css/OCstyles.css">
             <script src="./js/OCC.js" defer></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    
    <body>
@@ -29,15 +30,15 @@
          <ul>
          
                <li class="logo">
-                  <img src="./public/ISTE.png" alt="logo" class="LOGO">
+                 <a href="https://istetiet.com/"> <img src="./public/ISTE.png" alt="logo" class="LOGO"> </a>
                </li>
    
             <li class="btn"><span class="fas fa-bars"></span></li>
-            <div class="items">                                                         <!--NEED TO ADD LINKS IN THE END-->
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Event Details</a></li>
-               <li><a href="#">Sponsors</a></li>
-               <li><a href="#">OC of the Event</a></li>
+            <div class="items">                                                         
+               <li><a href="#home">Home</a></li>
+               <li><a href="#Events">Event Details</a></li>
+               <li><a href="#sponsor">Sponsors</a></li>
+               <li><a href="#OC">OC of the Event</a></li>
                <!-- <li><a href="#">Contact Us</a></li> -->
             
             </div>
@@ -73,12 +74,12 @@
       </script>
     <!--navbar finishes--> 
     <!--hero section starts-->
-    <div>
+    <div id="home">
       <img src="./public/logo.png" alt="EventLogo" id="hero">
     </div>
     <!--hero section finishes-->
     <!--event details starts-->
-   <div class="eventNames"> 
+   <div class="eventNames" id="Events"> 
     <div class="container">
 
          <h3 class="heading"> Events </h3>
@@ -122,7 +123,7 @@
    </div>   
      <div class="products-preview">
         
-        <div class="preview" data-target="p-1">
+        <div class="preview" data-target="p-1" style="top:5rem">
            <div class="container">
            <div class="popup-left">
               <i class="fas fa-times"></i>
@@ -174,7 +175,7 @@
   
   
   
-        <div class="preview" data-target="p-2">
+        <div class="preview" data-target="p-2" style="top:5rem">
            <div class="container">
               <div class="popup-left">
                  <i class="fas fa-times"></i>
@@ -202,9 +203,9 @@
                   <input type="text" name="member1Name" placeholder="Member-1 Name" required>
                   <input type="email" name="member1Email" placeholder="Member-1 Email" required>
                   <input type="number" name="member1Phone" placeholder="Member-1 Contact No." required>
-                  <input type="text" name="member2Name" placeholder="Member-2 name" required>
-                  <input type="email" name="member2Email" placeholder="Member-2 Email" required>
-                  <input type="number" name="member2Phone" placeholder="Member-2 Contact No." required>
+                  <input type="text" name="member2Name" placeholder="Member-2 name" required />
+                  <input type="email" name="member2Email" placeholder="Member-2 Email" required />
+                  <input type="number" name="member2Phone" placeholder="Member-2 Contact No." required />
                   <button type="button" class="btn btn2" onclick="submitFormFallacy()">Submit</button>
                   <div class="button">
                </form>
@@ -238,16 +239,17 @@
        .then(data => {
         // Handle the response from the API
         console.log('Success:', data);
-      })
+      }).then(()=>alert('Registration successful'))
       .catch(error => {
         // Handle errors
         console.error('Error:', error);
+        alert('Registration unsuccessful');
       });
 }
          
      </script>
   
-        <div class="preview" data-target="p-3">
+        <div class="preview" data-target="p-3" style="top:5rem">
            <div class="container">
               <div class="popup-left">
                  <i class="fas fa-times"></i>
@@ -297,7 +299,7 @@
            </div>
         </div>
   
-        <div class="preview" data-target="p-4">
+        <div class="preview" data-target="p-4" style="top:5rem">
            <div class="container">
               <div class="popup-left">
                  <i class="fas fa-times"></i>
@@ -326,7 +328,7 @@
            </div>
         </div>
   
-        <div class="preview" data-target="p-5">
+        <div class="preview" data-target="p-5" style="top:5rem">
            <div class="container">
               <div class="popup-left">
                  <i class="fas fa-times"></i>
@@ -380,7 +382,7 @@
     <!--event details finishes-->
     <!--sponser starts-->
    <div class="sponser">
-      <div class="sponsers">
+      <div class="sponsers" id="sponsor">
          <h1>SPONSORS</h1>
       </div>
       <div class="tag" ><h1>Platinum Sponsors</h1></div>
@@ -435,7 +437,7 @@
    </div>   
     <!--sponser finishes-->
     <!--OC starts-->
-    <div class=".organizingCommittee">
+    <div class=".organizingCommittee" id="OC">
          <div class="background"></div>
 
          <h2 class="heading1">ORGANIZING COMMITTEE</h2>
@@ -446,7 +448,7 @@
                
          
             <div class="wrapper">
-               <i id="left" class="fa-solid fa-angle-left"></i>
+               <i id="left" class='fas fa-angle-left' style="font-size: 2rem"></i>
                <ul class="carousel">
                   <li class="card">
                   <div class="img"><img src="./public/OC/yash.jpg" alt="img" draggable="false"></div>
@@ -569,7 +571,7 @@
                      <span>(Creativity Head)</span>
                   </li>
                </ul>
-               <i id="right" class="fa-solid fa-angle-right"></i>
+               <i id="right" class='fas fa-angle-right' style="font-size: 2rem"></i>
             </div>
       </div>
     <!--OC finishes-->
