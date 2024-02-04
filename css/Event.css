@@ -71,7 +71,7 @@ body{
 
 .container .products-container .product{
    text-align: center;
-   padding:3rem 2rem;
+   padding:1.5rem 1.5rem;
    background: #002b5894;
   
    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -262,7 +262,7 @@ form btn2 {
 
 .layer1{
    display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100vw;
   flex-wrap: wrap;
 }
