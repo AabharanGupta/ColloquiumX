@@ -101,19 +101,15 @@
                   <h3>CIRCUITRIX</h3>
                   <div class="price">13 February 24</div>
                </div>
-            </div>
-            <div class="layer2">
-               <div class="product" data-name="p-4">
-                  <img src="./public/eventDetails/eventLogo.png" alt="ARCANE">
-                  <h3>ARCANE</h3>
-                  <div class="price">14 February 24</div>
-               </div>
+            
+
       
                <div class="product" data-name="p-5">
                   <img src="./public/eventDetails/eventLogo.png" alt="BUZZINGA">
                   <h3>BUZZINGA</h3>
                   <div class="price">15 February 24</div>
                </div> 
+            </div>
             </div>
          </div>
    
@@ -386,75 +382,6 @@
          
      </script>
   
-        <div class="preview" data-target="p-4" style="top:5rem">
-           <div class="container">
-              <div class="popup-left">
-                 <i class="fas fa-times"></i>
-                 <img src="./public/eventDetails/11852467_4799098.jpg" alt="Event 1">
-                 <h3>ARCANE</h3>
-                 <div class="price">14 February 24</div>
-                 <p>Arcane is an intense gaming event with
-                  separate mobile and PC stages.Featuring Valorant and BGMI
-                  squad TDM tournaments.
-                  
-                 </p>
-              </div>
-     
-              <div class="popup-right">
-               
-                 <form id="arcane">
-                  <input type="text" name="name" placeholder="Player Name" required>
-                  <input type="Email" name="email" placeholder="Player Email" required>
-                  <input type="number" name="phoneNumber" placeholder="Player Number" required>
-                  <button type="submit" class="btn btn2" onclick="submitFormArcane()">Submit</button>
-                  <div class="button">
-                 </form>
-               </div>
-            </div>
-     
-           </div>
-        </div>
-        <script>
-         function submitFormArcane() {
-            // Get form data
-            const form = document.getElementById('arcane');
-            const formData = new FormData(form);
-
-            // Convert form data to a plain object
-            const formDataObject = {};
-            formData.forEach((value, key) => {
-            formDataObject[key] = value;
-         });
-
-        // Make a POST request using the fetch API with 'Content-Type: application/json'
-        fetch('http://localhost:3000/register/arcane', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formDataObject)
-        })
-       .then(response => response.json())
-       .then(data => {
-        // Handle the response from the API
-        if(data.status == true)
-         {
-               alert('Registration successful');
-         }
-         else
-         {
-               alert('Registration unsuccessful');
-         }
-        console.log('Success:', data);
-      })
-      .catch(error => {
-        // Handle errors
-        console.error('Error:', error);
-        alert('Registration unsuccessfully');
-      });
-}
-         
-     </script>
   
         <div class="preview" data-target="p-5" style="top:5rem">
            <div class="container">
@@ -622,107 +549,107 @@
                   <li class="card">
                   <div class="img"><img src="./public/OC/yash.jpg" alt="img" draggable="false"></div>
                   <h2>Yash Bhargava</h2>
-                  <span>(Overall Event Coordinator)</span>
+                  <span>Overall Event Coordinator</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/GARGI.jpg" alt="img" draggable="false"></div>
                   <h2>Gargi Mehta</h2>
-                  <span>(Overall Event Coordinator)</span>
+                  <span>Overall Event Coordinator</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/sarthak.jpg" alt="img" draggable="false"></div>
                   <h2>Sarthak Srivastava</h2>
-                  <span>(Event Management Head)</span>
+                  <span>Event Management Head</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/Anushka Sharma.jpg" alt="img" draggable="false"></div>
                   <h2>Anushka Sharma</h2>
-                  <span>(Event Management Head)</span>
+                  <span>Event Management Head</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/Nutan.jpg" alt="img" draggable="false"></div>
                   <h2>Nutan</h2>
-                  <span>(Event Management Head)</span>
+                  <span>Event Management Head</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/Manya Bansal.jpg" alt="img" draggable="false"></div>
                   <h2>Manya Bansal</h2>
-                  <span>(Documentation Head)</span>
+                  <span>Documentation Head</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/Johnvi.jpg" alt="img" draggable="false"></div>
                   <h2>Jahnvi Ranjan</h2>
-                  <span>(Documentation Head)</span>
+                  <span>Documentation Head</span>
                   </li>
                   <li class="card">
                      <div class="img"><img src="./public/OC/jini.png" alt="img" draggable="false"></div>
                      <h2>Jini Manchanda</h2>
-                     <span>(Logistics Head)</span>
+                     <span>Logistics Head</span>
                   </li> 
                   <li class="card">
                      <div class="img"><img src="./public/OC/arjun.jpg" alt="img" draggable="false"></div>
                      <h2>Arjun Shekhar</h2>
-                     <span>(Logistics Head)</span>
+                     <span>Logistics Head</span>
                   </li>  
                   <li class="card">
                      <div class="img"><img src="./public/OC/me.jpg" alt="img" draggable="false"></div>
                      <h2>Aabharan Gupta</h2>
-                     <span>(Technical Head)</span>
+                     <span>Technical Head</span>
                   </li>
                   <li class="card">
                      <div class="img"><img src="./public/OC/Vivek.JPG" alt="img" draggable="false"></div>
                      <h2>Vivek Arora</h2>
-                     <span>(Technical Head)</span>
+                     <span>Technical Head</span>
                   </li>
                   <li class="card">
                      <div class="img"><img src="./public/OC/rohit.jpg" alt="img" draggable="false"></div>
                      <h2>Rohit Deepchandani</h2>
-                     <span>(Technical Head)</span>
+                     <span>Technical Head</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/Aakash.jpg" alt="img" draggable="false"></div>
                   <h2>Aakash Arora</h2>
-                  <span>(Marketing Head)</span>
+                  <span>Marketing Head</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/Akshara.jpg" alt="img" draggable="false"></div>
                   <h2>Akshara Manocha</h2>
-                  <span>(Marketing Head)</span>
+                  <span>Marketing Head</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/Naman.JPG" alt="img" draggable="false"></div>
                   <h2>Naman Kumar</h2>
-                  <span>(Marketing Head)</span>
+                  <span>Marketing Head</span>
                   </li>
                   <li class="card">
                   <div class="img"><img src="./public/OC/Shreya Singh.jpg" alt="img" draggable="false"></div>
                   <h2>Shreya Singh</h2>
-                  <span>(Content Head)</span>
+                  <span>Content Head</span>
                   </li>
                   <li class="card">
                      <div class="img"><img src="./public/OC/khushpreet.jpg" alt="img" draggable="false"></div>
                      <h2>Khushpreet Singh</h2>
-                     <span>(Content Head)</span>
+                     <span>Content Head</span>
                      </li>
                   <li class="card">
                      <div class="img"><img src="./public/OC/Shreyansh Srivastava_.jpg" alt="img" draggable="false"></div>
                      <h2>Shreyansh Srivastava</h2>
-                     <span>(Design & Media Head)</span>
+                     <span>Design & Media Head</span>
                   </li>
                   <li class="card">
                      <div class="img"><img src="./public/OC/rohita.png" alt="img" draggable="false"></div>
                      <h2>Rohit Arora</h2>
-                     <span>(Media Head)</span>
+                     <span>Media Head</span>
                   </li>    
                   <li class="card">
                      <div class="img"><img src="./public/OC/Abhyuday.jpg" alt="img" draggable="false"></div>
                      <h2>Abhyuday Venkatesh</h2>
-                     <span>(Publicity Head)</span>
+                     <span>Publicity Head</span>
                   </li>    
                   <li class="card">
                      <div class="img"><img src="./public/OC/Sra .jpg" alt="img" draggable="false"></div>
                      <h2>Sra Bhatia</h2>
-                     <span>(Publicity Head)</span>
+                     <span>Publicity Head</span>
                   </li>
                   <li class="card">
                      <div class="img"><img src="./public/OC/Prarthana Aggarwal .jpg" alt="img" draggable="false"></div>
@@ -732,12 +659,12 @@
                   <li class="card">
                      <div class="img"><img src="./public/OC/Khushi.jpg" alt="img" draggable="false"></div>
                      <h2>Khushi</h2>
-                     <span>(Creativity Head)</span>
+                     <span>Creativity Head</span>
                   </li>
                   <li class="card">
                      <div class="img"><img src="./public/OC/Shreya Saini.jpg" alt="img" draggable="false"></div>
                      <h2>Shreya Saini</h2>
-                     <span>(Creativity Head)</span>
+                     <span>Creativity Head</span>
                   </li>
                </ul>
                <i id="right" class='fas fa-angle-right' style="font-size: 2rem"></i>
