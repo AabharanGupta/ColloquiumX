@@ -146,29 +146,69 @@
            <div class="popup-right">
              
            </div>
-              <form>
-                  <input type="text" name="Name" placeholder="Team Name" required>
-                 <input type="text" name="Name" placeholder="Member-1 Name" required>
-                 <input type="Email" name="Email" placeholder="Member-1 Email" required>
-                 <input type="number" name="Contact No." placeholder="Member-1 Contact No." required>
-                 <input type="text" name="Name" placeholder="Member-2 name" required>
-                 <input type="Email" name="Email" placeholder="Member-2 Email" required>
-                 <input type="number" name="Contact No." placeholder="Member-2 Contact No." required>
-                 <input type="text" name="Name" placeholder="Member-3 name" required>
-                 <input type="Email" name="Email" placeholder="Member-3 Email" required>
-                 <input type="number" name="Contact No." placeholder="Member-3 Contact No." required>
-                 <input type="text" name="Name" placeholder="Member-4 name">
-                 <input type="Email" name="Email" placeholder="Member-4 Email">
-                 <input type="number" name="Contact No." placeholder="Member-4 Contact No.">
-                 <button type="submit" class="btn btn2">Submit</button>
+              <form id="reckon">
+                  <input type="text" name="teamName" placeholder="Team Name" required>
+                 <input type="text" name="leaderName" placeholder="Member-1 Name" required>
+                 <input type="Email" name="leaderEmail" placeholder="Member-1 Email" required>
+                 <input type="number" name="leaderPhone" placeholder="Member-1 Contact No." required>
+                 <input type="text" name="member2Name" placeholder="Member-2 name" required>
+                 <input type="Email" name="member2Email" placeholder="Member-2 Email" required>
+                 <input type="number" name="member2Phone" placeholder="Member-2 Contact No." required>
+                 <input type="text" name="member3Name" placeholder="Member-3 name" required>
+                 <input type="Email" name="member3Email" placeholder="Member-3 Email" required>
+                 <input type="number" name="member3Phone" placeholder="Member-3 Contact No." required>
+                 <input type="text" name="member4Name" placeholder="Member-4 name">
+                 <input type="Email" name="member4Email" placeholder="Member-4 Email">
+                 <input type="number" name="member4Phone" placeholder="Member-4 Contact No.">
+                 <button type="submit" class="btn btn2" onclick="submitFormReckon()">Submit</button>
                  <div class="button">
               </form>
            </div>
   
         </div>
-        </div>
-  
-  
+      </div>
+        
+      <script>
+         function submitFormReckon() {
+            // Get form data
+            const form = document.getElementById('reckon');
+            const formData = new FormData(form);
+
+            // Convert form data to a plain object
+            const formDataObject = {};
+            formData.forEach((value, key) => {
+            formDataObject[key] = value;
+         });
+
+        // Make a POST request using the fetch API with 'Content-Type: application/json'
+        fetch('http://localhost:3000/register/reckon', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formDataObject)
+        })
+       .then(response => response.json())
+       .then(data => {
+        // Handle the response from the API
+        if(data.status == true)
+         {
+               alert('Registration successful');
+         }
+         else
+         {
+               alert('Registration unsuccessful');
+         }
+        console.log('Success:', data);
+      }).then(()=>alert('Registration successful'))
+      .catch(error => {
+        // Handle errors
+        console.error('Error:', error);
+        alert('Registration unsuccessfully');
+      });
+}
+         
+     </script>
   
   
   
@@ -283,7 +323,7 @@
      
               <div class="popup-right">
               </div>
-              <form> 
+              <form id="circuitrix"> 
                <input type="text" name="Name" placeholder="Team Name" required>
                <input type="text" name="Name" placeholder="Member-1 Name" required>
                <input type="Email" name="Email" placeholder="Member-1 Email" required>
@@ -297,13 +337,54 @@
                <input type="text" name="Name" placeholder="Member-4 name">
                <input type="Email" name="Email" placeholder="Member-4 Email">
                <input type="number" name="Contact No." placeholder="Member-4 Contact No.">
-               <button type="submit" class="btn btn2">Submit</button>
+               <button type="submit" class="btn btn2" onclick="submitFormCircuitrix()">Submit</button>
                <div class="button">
             </form>
               </div>
      
            </div>
         </div>
+        <script>
+         function submitFormCircuitrix() {
+            // Get form data
+            const form = document.getElementById('circuitrix');
+            const formData = new FormData(form);
+
+            // Convert form data to a plain object
+            const formDataObject = {};
+            formData.forEach((value, key) => {
+            formDataObject[key] = value;
+         });
+
+        // Make a POST request using the fetch API with 'Content-Type: application/json'
+        fetch('http://localhost:3000/register/circuitrix', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formDataObject)
+        })
+       .then(response => response.json())
+       .then(data => {
+        // Handle the response from the API
+        if(data.status == true)
+         {
+               alert('Registration successful');
+         }
+         else
+         {
+               alert('Registration unsuccessful');
+         }
+        console.log('Success:', data);
+      }).then(()=>alert('Registration successful'))
+      .catch(error => {
+        // Handle errors
+        console.error('Error:', error);
+        alert('Registration unsuccessfully');
+      });
+}
+         
+     </script>
   
         <div class="preview" data-target="p-4" style="top:5rem">
            <div class="container">
@@ -321,11 +402,11 @@
      
               <div class="popup-right">
                
-                 <form>
+                 <form id="arcane">
                   <input type="text" name="Name" placeholder="Player Name" required>
                   <input type="Email" name="Email" placeholder="Player Email" required>
                   <input type="number" name="Contact No." placeholder="Player Number" required>
-                  <button type="submit" class="btn btn2">Submit</button>
+                  <button type="submit" class="btn btn2" onclick="submitFormArcane()">Submit</button>
                   <div class="button">
                  </form>
                </div>
@@ -333,6 +414,47 @@
      
            </div>
         </div>
+        <script>
+         function submitFormArcane() {
+            // Get form data
+            const form = document.getElementById('arcane');
+            const formData = new FormData(form);
+
+            // Convert form data to a plain object
+            const formDataObject = {};
+            formData.forEach((value, key) => {
+            formDataObject[key] = value;
+         });
+
+        // Make a POST request using the fetch API with 'Content-Type: application/json'
+        fetch('http://localhost:3000/register/arcane', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formDataObject)
+        })
+       .then(response => response.json())
+       .then(data => {
+        // Handle the response from the API
+        if(data.status == true)
+         {
+               alert('Registration successful');
+         }
+         else
+         {
+               alert('Registration unsuccessful');
+         }
+        console.log('Success:', data);
+      }).then(()=>alert('Registration successful'))
+      .catch(error => {
+        // Handle errors
+        console.error('Error:', error);
+        alert('Registration unsuccessfully');
+      });
+}
+         
+     </script>
   
         <div class="preview" data-target="p-5" style="top:5rem">
            <div class="container">
@@ -360,7 +482,7 @@
      
               <div class="popup-right">
             </div>
-              <form>
+              <form id="buzzinga">
                   <input type="text" name="Name" placeholder="Team Name" required>
                   <input type="text" name="Name" placeholder="Member-1 Name" required>
                   <input type="Email" name="Email" placeholder="Member-1 Email" required>
@@ -374,7 +496,7 @@
                   <input type="text" name="Name" placeholder="Member-4 name">
                   <input type="Email" name="Email" placeholder="Member-4 Email">
                   <input type="number" name="Contact No." placeholder="Member-4 Contact No">
-                  <button type="submit" class="btn btn2">Submit</button>
+                  <button type="submit" class="btn btn2" onclick="submitFormBuzzinga()">Submit</button>
                   <div class="button">
                </form>
 
@@ -383,6 +505,47 @@
            </div>
         </div>
       </div>
+      <script>
+         function submitFormBuzzinga() {
+            // Get form data
+            const form = document.getElementById('buzzinga');
+            const formData = new FormData(form);
+
+            // Convert form data to a plain object
+            const formDataObject = {};
+            formData.forEach((value, key) => {
+            formDataObject[key] = value;
+         });
+
+        // Make a POST request using the fetch API with 'Content-Type: application/json'
+        fetch('http://localhost:3000/register/fallacy', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formDataObject)
+        })
+       .then(response => response.json())
+       .then(data => {
+        // Handle the response from the API
+        if(data.status == true)
+         {
+               alert('Registration successful');
+         }
+         else
+         {
+               alert('Registration unsuccessful');
+         }
+        console.log('Success:', data);
+      }).then(()=>alert('Registration successful'))
+      .catch(error => {
+        // Handle errors
+        console.error('Error:', error);
+        alert('Registration unsuccessfully');
+      });
+}
+         
+     </script>
   
    </div>
     <!--event details finishes-->
