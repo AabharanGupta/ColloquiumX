@@ -1,6 +1,6 @@
 .sponser{
     padding-top: 56%;
-    background-color:#f4b602;
+
 }
 .sponsers{
     font-family: Garamond;
@@ -104,7 +104,7 @@
   }
   .sponser{
     position: static;
-    
+    padding-top: 25%;
   }
   .tag{
     padding-top: 3rem;
@@ -166,7 +166,7 @@
   margin-bottom:150px;
   }
   .sponser{
-    padding-top: 1600px;
+    margin-top: 1000px;
   }
   .tag{
     padding-top: 20rem;
@@ -243,6 +243,7 @@
   
   }
   }
+
   @media only screen and (min-width: 1440px){
     .sponserContainer 
   {
@@ -278,7 +279,7 @@
     margin-left:3.5rem;
     }
     .sponser{
-      padding-top: 56%;
+      padding-top: 25%;
     }
     .tag{
      padding-top: 5rem;
@@ -320,4 +321,9 @@
   margin-bottom:150px;
   
   }
+  }
+
+  #sponsor{
+    width: 100%;
+    background-color:#f4b602;
   }

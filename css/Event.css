@@ -16,11 +16,13 @@ html{
    overflow-x: hidden;
 }
 
-body{
-   background: #01adc1;
-   /* background-image: url("/public/eventDetails/4824751.jpg"); */
+/* body{
+   /* background: #01adc1; 
+   /* background-image: url("/public/eventDetails/4824751.jpg"); 
    background-size:cover;
-}
+} */
+
+
 
 .container
 {
@@ -345,4 +347,8 @@ p{
       order: 1; /* Set the order of popup-right to 1 */
       flex-basis: 100%;
    }
+}
+
+#Events{
+   background-color: #27ae60;
 }
