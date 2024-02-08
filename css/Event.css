@@ -347,8 +347,13 @@ p{
       order: 1; /* Set the order of popup-right to 1 */
       flex-basis: 100%;
    }
+   #Events{
+      background-color: #27ae60;
+      padding-bottom: 25%;
+   }
 }
 
 #Events{
    background-color: #27ae60;
+   padding-bottom: 25%;
 }
