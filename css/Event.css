@@ -361,23 +361,3 @@ p{
 body{
    background-color: #f4b602;;
 }
-
-.ctfimg{
-   /* width: 100%; */
-    margin-left : -10px; 
-   margin-right: -100px; 
-   padding-right: 10px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-.debugimg{
-   width: 120%;
-   margin-left: -10px;
-}
- .buzzimg{
-   justify-content: center;
-} 
-.circuitlogo{
-   width: 100%;
-}
